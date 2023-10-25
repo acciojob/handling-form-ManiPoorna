@@ -10,8 +10,11 @@ const App = () => {
   },[name])
   return (
     <div>
-        {/* Do not remove the main div */}
-      <input onChange={(e)=>setName(e.target.value) } />
+      {/* Do not remove the main div */}
+      <form>
+      <input type="text" onChange={(e)=>setName(e.target.value) } />
+
+      </form>
     </div>
   )
 }
